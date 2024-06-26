@@ -1,0 +1,246 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+.home-img{
+    width: 100%;
+}
+
+.site-login{
+    display: flex;
+    width: 3%;
+    justify-content: end;
+}
+
+.site-logo{
+    display: flex;
+    justify-content: left;
+}
+body{
+    background-color: white;
+}
+
+.site-header{
+    position: sticky;
+    background-color: white;
+    top: 0;
+    display: flex;
+    gap: 55vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 20px;
+}
+
+.menu-list{
+    display: flex;
+    gap: 40px;
+    font-size: 30px;
+}
+
+.menu-link{
+    text-decoration: none;
+    font-weight: bold;
+    color: #000000;
+}
+
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-title{
+    position: absolute;
+    padding: 50px;
+    border-radius: 25px;
+    background-color: rgb(16, 126, 123);
+    color: white;
+    font-size: 32px;
+}
+
+.home-title:hover{
+    transition-duration: 1s;
+    background-color: rgb(10, 5, 101);
+}
+
+
+
+/* INICIO EDIÇÃO IMAGENS vendidos */
+#vendidos{
+    display: grid;
+    grid-template-columns: repeat(3, 0.5fr);
+}
+
+.vendidos-title{
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.vendidos-img{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+#vendidos:hover {
+    cursor: pointer;
+  }
+
+
+#vendidos .vendidos-img1{
+    width: 440px;
+    height: 440px;
+    background-image: url(https://m.media-amazon.com/images/I/51FA2CXlV+L._SR480,440_.jpg);
+}
+
+#vendidos .vendidos-img2{
+    width: 440px;
+    height: 440px;
+    background-image: url(https://m.media-amazon.com/images/I/514bEg9vFRL._SR480,440_.jpg);
+}
+
+#vendidos .vendidos-img3{
+    width: 440px;
+    height: 440px;
+    background-image: url(https://m.media-amazon.com/images/I/41W5aVE4dSL._SR480,440_.jpg);
+}
+ /* FIM EDIÇÃO vendidos */
+
+
+
+/* INICIO EDIÇÃO promocao */
+.promocao-title{
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.card div{
+    display: grid;
+    align-items: center;
+    gap: 5px;
+    height: 40%;
+}
+
+.card{
+    background-color: white;
+    width: 180px;
+    height: 280px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px gray;
+    display: inline-block;
+}
+    
+
+.card img{
+    width: 50%;
+    height: 120px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin-left: 20%;
+    margin-top: 5%;
+}
+
+
+.card button{
+    background-color:black;
+    height: 30px;
+    border: none;
+    width: 80%;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.card button:hover {
+    cursor: pointer;
+  }
+/* FIM EDIÇÃO PROMOCAO */
+
+
+
+/* INICIO EDIÇÃO RODAPÉ */
+ footer {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    font-size: 1.6rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 0;
+    padding: 20px;
+}
+
+.footer-form, .footer-contact {
+    flex: 1;
+    margin: 0 50px;
+}
+
+.footer-form h3, .footer-contact h3 {
+    margin-bottom: 10px;
+}
+
+.footer-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-form label {
+    margin-bottom: 5px;
+}
+
+.footer-form input {
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 1.4rem;
+}
+
+.footer-form button {
+    padding: 10px;
+    font-size: 1.6rem;
+    background-color: blue;
+    border: none;
+    cursor: pointer;
+}
+
+.footer-form button:hover {
+    transition-duration: 0.5s;
+    background-color: rgb(16, 126, 123);
+}
+
+.footer-contact p {
+    margin-bottom: 10px;
+}
+
+.redes{
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+}
+
+@media (max-width:800px) {
+    .site-header{
+        display: grid;
+        grid-template-columns: repeat(1, 200px);
+    }
+    .menu-item{
+        display: grid;
+        grid-template-columns: repeat(1, 200px);
+    }
+}
